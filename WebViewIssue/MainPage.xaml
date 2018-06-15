@@ -9,6 +9,12 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid>
-
+        <StackPanel Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <Button x:Name="VideoOne" Content="Video One" FontSize="22" Foreground="Black" Click="VideoOne_Click" Width="300" Height="100" />
+            <Rectangle Height="10" />
+            <Button x:Name="VideoTwo" Content="Video Two" FontSize="22" Foreground="Black" Click="VideoTwo_Click" Width="300" Height="100" />
+            <Rectangle Height="10" />
+            <Button x:Name="VideoThree" Content="Video Three" FontSize="22" Foreground="Black" Click="VideoThree_Click" Width="300" Height="100" />
+        </StackPanel>
     </Grid>
 </Page>
