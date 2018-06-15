@@ -18,11 +18,12 @@ namespace WebViewIssue
                 {
                     WebViewer.GoBack();
                     a.Handled = true;
-                    return;
                 }
                 else
                 {
+                    WebViewer.NavigateToString("<html>Unloaded.</html>");
                     WebViewer.NavigateToString("");
+                    var source = WebViewer.Source; // is cleared to null
                 }
             };
         }
